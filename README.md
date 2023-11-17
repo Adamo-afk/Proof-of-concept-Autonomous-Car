@@ -1,3 +1,3 @@
-# Proof-of-concept-Autonomous-Car
-Description: The system consists of a miniature autonomous car that can classify four traffic signs: "STOP", "Ahead Only", "Turn Left," and "Turn Right.". The machine uses the VGG19 convolutional neural network as the main tool for classification. Images are captured by the video camera and then sent to the Raspberry Pi 4 Model B, where they will be processed.
+# Proof-of-concept Autonomous Car
+The system consists of a miniature autonomous car that can classify four traffic signs: "STOP", "Ahead Only", "Turn Left," and "Turn Right.". The machine uses the VGG19 convolutional neural network as the main tool for classification. Images are captured by the video camera and then sent to the Raspberry Pi 4 Model B, where they will be processed.
 When any frame is captured and classified as representing a traffic sign with a confidence score of over 90%, the Raspberry Pi sends a 5V PWM pulse to two H-bridges, one controlling the front motors and the other controlling the rear motors. Geared motors, receiving a 5 V load, will have a rotational speed of approximately 200 revolutions per minute.
